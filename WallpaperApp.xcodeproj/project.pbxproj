@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14372780198DBFA5000A06C0 /* ImagePost.m in Sources */ = {isa = PBXBuildFile; fileRef = 1437277F198DBFA5000A06C0 /* ImagePost.m */; };
 		14E63CCB197D49CA005E06BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E63CCA197D49CA005E06BE /* Foundation.framework */; };
 		14E63CCD197D49CA005E06BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E63CCC197D49CA005E06BE /* CoreGraphics.framework */; };
 		14E63CCF197D49CA005E06BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E63CCE197D49CA005E06BE /* UIKit.framework */; };
@@ -21,6 +22,7 @@
 		14E63CEC197D49CA005E06BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E63CCE197D49CA005E06BE /* UIKit.framework */; };
 		14E63CF4197D49CA005E06BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14E63CF2197D49CA005E06BE /* InfoPlist.strings */; };
 		14E63CF6197D49CA005E06BE /* WallpaperAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E63CF5197D49CA005E06BE /* WallpaperAppTests.m */; };
+		14E63D00197D4A0C005E06BE /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E63CFF197D4A0C005E06BE /* placeholder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1437277E198DBFA5000A06C0 /* ImagePost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePost.h; sourceTree = "<group>"; };
+		1437277F198DBFA5000A06C0 /* ImagePost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePost.m; sourceTree = "<group>"; };
 		14E63CC7197D49CA005E06BE /* WallpaperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallpaperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E63CCA197D49CA005E06BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		14E63CCC197D49CA005E06BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +57,7 @@
 		14E63CF1197D49CA005E06BE /* WallpaperAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WallpaperAppTests-Info.plist"; sourceTree = "<group>"; };
 		14E63CF3197D49CA005E06BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		14E63CF5197D49CA005E06BE /* WallpaperAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WallpaperAppTests.m; sourceTree = "<group>"; };
+		14E63CFF197D4A0C005E06BE /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +122,8 @@
 				14E63CDC197D49CA005E06BE /* Main.storyboard */,
 				14E63CDF197D49CA005E06BE /* ViewController.h */,
 				14E63CE0197D49CA005E06BE /* ViewController.m */,
+				1437277E198DBFA5000A06C0 /* ImagePost.h */,
+				1437277F198DBFA5000A06C0 /* ImagePost.m */,
 				14E63CE2197D49CA005E06BE /* Images.xcassets */,
 				14E63CD1197D49CA005E06BE /* Supporting Files */,
 			);
@@ -126,6 +133,7 @@
 		14E63CD1197D49CA005E06BE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				14E63CFF197D4A0C005E06BE /* placeholder.png */,
 				14E63CD2197D49CA005E06BE /* WallpaperApp-Info.plist */,
 				14E63CD3197D49CA005E06BE /* InfoPlist.strings */,
 				14E63CD6197D49CA005E06BE /* main.m */,
@@ -229,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14E63CE3197D49CA005E06BE /* Images.xcassets in Resources */,
+				14E63D00197D4A0C005E06BE /* placeholder.png in Resources */,
 				14E63CD5197D49CA005E06BE /* InfoPlist.strings in Resources */,
 				14E63CDE197D49CA005E06BE /* Main.storyboard in Resources */,
 			);
@@ -252,6 +261,7 @@
 				14E63CE1197D49CA005E06BE /* ViewController.m in Sources */,
 				14E63CDB197D49CA005E06BE /* AppDelegate.m in Sources */,
 				14E63CD7197D49CA005E06BE /* main.m in Sources */,
+				14372780198DBFA5000A06C0 /* ImagePost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +466,7 @@
 				14E63CFB197D49CA005E06BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14E63CFC197D49CA005E06BE /* Build configuration list for PBXNativeTarget "WallpaperAppTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +475,7 @@
 				14E63CFE197D49CA005E06BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

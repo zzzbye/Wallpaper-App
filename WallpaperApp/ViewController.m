@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ImagePost.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSURL *imageURL = [NSURL URLWithString:@"https://www.googleapis.com/storage/v1/b/abstract/o"];
+    NSData *jsonData = [NSData dataWithContentsOfURL:imageURL];
+    
+    NSError *error = nil;
+    NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
+    
+    self.wallPaperArray = [NSMutableArray array];
+    
+    NSArray *imagePostArray = [dataDictionary objectForKey:@"items"];
+    for (NSDictionary *ipDictionary in imagePostArray) {
+        ImagePost *imgPost = [ImagePost imagePostWithURL:[ipDictionary objectForKey:@"mediaLink"]];
+//        NSURL *wpURL = [NSURL URLWithString:imgPost.wallPaper];
+//        NSData *imgData = [NSData dataWithContentsOfURL:wpURL];
+        [self.wallPaperArray addObject:imgPost];
+    }
+    
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -25,5 +47,35 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark Collection View Methods
+
+-(NSInteger) numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
+}
+
+-(NSInteger) collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return [self.wallPaperArray count];
+}
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+
+    ImagePost *imgPost = [self.wallPaperArray objectAtIndex:indexPath.row];
+    UIImageView *imageView = (UIImageView *)[cell viewWithTag:100];
+
+    NSURL *wpURL = [NSURL URLWithString:imgPost.wallPaper];
+    NSData *imgData = [NSData dataWithContentsOfURL:wpURL];
+    
+    imageView.image = [UIImage imageWithData:imgData];
+    
+    
+    
+    return cell;
+}
+
 
 @end
