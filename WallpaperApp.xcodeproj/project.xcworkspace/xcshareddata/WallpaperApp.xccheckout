@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EEB05617-388D-45A4-B776-B461C8277E0F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WallpaperApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7F7D188C-EBE4-4569-8F83-9215EC484B7F</key>
+		<string>https://github.com/zzzbye/Wallpaper-App.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WallpaperApp.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7F7D188C-EBE4-4569-8F83-9215EC484B7F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zzzbye/Wallpaper-App.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7F7D188C-EBE4-4569-8F83-9215EC484B7F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7F7D188C-EBE4-4569-8F83-9215EC484B7F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WallpaperApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

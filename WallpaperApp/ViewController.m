@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ImagePost.h"
+#import "UIImageView+WebCache.h"
 
 @interface ViewController ()
 
@@ -68,14 +69,13 @@
     UIImageView *imageView = (UIImageView *)[cell viewWithTag:100];
 
     NSURL *wpURL = [NSURL URLWithString:imgPost.wallPaper];
-    NSData *imgData = [NSData dataWithContentsOfURL:wpURL];
+//    NSData *imgData = [NSData dataWithContentsOfURL:wpURL];
     
-    imageView.image = [UIImage imageWithData:imgData];
-    
-    
-    
+//    imageView.image = [UIImage imageWithData:imgData];
+    [imageView sd_setImageWithURL:wpURL
+                placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+
     return cell;
 }
-
 
 @end
