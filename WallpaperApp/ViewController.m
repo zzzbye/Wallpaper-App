@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "ImagePost.h"
 #import "UIImageView+WebCache.h"
+#import "WallpaperViewController.h"
 
 @interface ViewController ()
 
@@ -41,6 +42,11 @@
 - (BOOL)prefersStatusBarHidden
 {
     return YES;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.navigationController.navigationBar.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -76,6 +82,16 @@
                 placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
 
     return cell;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([sender isKindOfClass:[UICollectionViewCell class]]){
+        if([segue.destinationViewController isKindOfClass:[WallpaperViewController class]])
+        {
+            WallpaperViewController *nextViewController = segue.destinationViewController;
+//            NSIndexPath *path = [UICollectionView indexPathForCell:sender];
+        }
+    }
 }
 
 @end

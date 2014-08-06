@@ -39,6 +39,7 @@
 		14E63CF4197D49CA005E06BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14E63CF2197D49CA005E06BE /* InfoPlist.strings */; };
 		14E63CF6197D49CA005E06BE /* WallpaperAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E63CF5197D49CA005E06BE /* WallpaperAppTests.m */; };
 		14E63D00197D4A0C005E06BE /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E63CFF197D4A0C005E06BE /* placeholder.png */; };
+		14F55CE31990F40D00837B8E /* WallpaperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F55CE21990F40D00837B8E /* WallpaperViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,8 @@
 		14E63CF3197D49CA005E06BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		14E63CF5197D49CA005E06BE /* WallpaperAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WallpaperAppTests.m; sourceTree = "<group>"; };
 		14E63CFF197D4A0C005E06BE /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		14F55CE11990F40D00837B8E /* WallpaperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperViewController.h; sourceTree = "<group>"; };
+		14F55CE21990F40D00837B8E /* WallpaperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +215,8 @@
 				14E63CDC197D49CA005E06BE /* Main.storyboard */,
 				14E63CDF197D49CA005E06BE /* ViewController.h */,
 				14E63CE0197D49CA005E06BE /* ViewController.m */,
+				14F55CE11990F40D00837B8E /* WallpaperViewController.h */,
+				14F55CE21990F40D00837B8E /* WallpaperViewController.m */,
 				1437277E198DBFA5000A06C0 /* ImagePost.h */,
 				1437277F198DBFA5000A06C0 /* ImagePost.m */,
 				14E63CE2197D49CA005E06BE /* Images.xcassets */,
@@ -355,6 +360,7 @@
 				14D65BC7198E720A002FD151 /* UIImage+MultiFormat.m in Sources */,
 				14D65BC2198E720A002FD151 /* SDWebImageDownloaderOperation.m in Sources */,
 				14E63CE1197D49CA005E06BE /* ViewController.m in Sources */,
+				14F55CE31990F40D00837B8E /* WallpaperViewController.m in Sources */,
 				14D65BBF198E720A002FD151 /* SDWebImageCompat.m in Sources */,
 				14D65BC6198E720A002FD151 /* UIImage+GIF.m in Sources */,
 				14D65BC4198E720A002FD151 /* SDWebImagePrefetcher.m in Sources */,
