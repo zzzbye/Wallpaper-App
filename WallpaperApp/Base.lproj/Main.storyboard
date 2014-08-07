@@ -22,7 +22,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="ef7-jd-xj5">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="ef7-jd-xj5" customClass="WallpaperCell">
                                         <rect key="frame" x="0.0" y="64" width="100" height="177"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -37,7 +37,8 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <connections>
-                                            <segue destination="gai-hq-HK6" kind="push" identifier="imageSegue" id="xEO-cQ-xNq"/>
+                                            <outlet property="thumbnailImageView" destination="yOD-Qc-cuz" id="A3U-bv-01N"/>
+                                            <segue destination="eJF-hM-yyv" kind="push" identifier="fullviewSegue" id="Utr-xv-wx3"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -55,29 +56,29 @@
             </objects>
             <point key="canvasLocation" x="865" y="65"/>
         </scene>
-        <!--Wallpaper View Controller-->
-        <scene sceneID="0yh-5f-ywi">
+        <!--Detail View Controller-->
+        <scene sceneID="Jdm-cb-XzU">
             <objects>
-                <viewController id="gai-hq-HK6" customClass="WallpaperViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cVd-m5-0sS">
+                <viewController id="eJF-hM-yyv" customClass="DetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6eC-lj-Ilx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="yCz-75-lR3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="GBi-h0-5iN">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="FdK-bQ-9Xw"/>
+                    <navigationItem key="navigationItem" id="KGD-N4-veh"/>
                     <connections>
-                        <outlet property="wallpaperImageView" destination="yCz-75-lR3" id="tgT-TI-MVB"/>
+                        <outlet property="imageView" destination="GBi-h0-5iN" id="qzh-va-0p6"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GES-de-34o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KGh-Yn-Qgr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1267" y="65"/>
+            <point key="canvasLocation" x="1295" y="65"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tdt-8K-NhM">

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		14372780198DBFA5000A06C0 /* ImagePost.m in Sources */ = {isa = PBXBuildFile; fileRef = 1437277F198DBFA5000A06C0 /* ImagePost.m */; };
+		14916E4719929C9F001AD75D /* img_004.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14916E4619929C9F001AD75D /* img_004.jpg */; };
+		14A3834F1992811000EE0BB3 /* WallpaperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A3834E1992811000EE0BB3 /* WallpaperCell.m */; };
+		14A383521992886E00EE0BB3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A383511992886E00EE0BB3 /* DetailViewController.m */; };
 		14D65BBC198E720A002FD151 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D65B9C198E720A002FD151 /* MKAnnotationView+WebCache.m */; };
 		14D65BBD198E720A002FD151 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D65B9E198E720A002FD151 /* NSData+ImageContentType.m */; };
 		14D65BBE198E720A002FD151 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D65BA0198E720A002FD151 /* SDImageCache.m */; };
@@ -39,7 +42,6 @@
 		14E63CF4197D49CA005E06BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14E63CF2197D49CA005E06BE /* InfoPlist.strings */; };
 		14E63CF6197D49CA005E06BE /* WallpaperAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E63CF5197D49CA005E06BE /* WallpaperAppTests.m */; };
 		14E63D00197D4A0C005E06BE /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E63CFF197D4A0C005E06BE /* placeholder.png */; };
-		14F55CE31990F40D00837B8E /* WallpaperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F55CE21990F40D00837B8E /* WallpaperViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,11 @@
 /* Begin PBXFileReference section */
 		1437277E198DBFA5000A06C0 /* ImagePost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePost.h; sourceTree = "<group>"; };
 		1437277F198DBFA5000A06C0 /* ImagePost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePost.m; sourceTree = "<group>"; };
+		14916E4619929C9F001AD75D /* img_004.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_004.jpg; sourceTree = "<group>"; };
+		14A3834D1992811000EE0BB3 /* WallpaperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperCell.h; sourceTree = "<group>"; };
+		14A3834E1992811000EE0BB3 /* WallpaperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperCell.m; sourceTree = "<group>"; };
+		14A383501992886E00EE0BB3 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		14A383511992886E00EE0BB3 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		14D65B9B198E720A002FD151 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
 		14D65B9C198E720A002FD151 /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
 		14D65B9D198E720A002FD151 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
@@ -108,8 +115,6 @@
 		14E63CF3197D49CA005E06BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		14E63CF5197D49CA005E06BE /* WallpaperAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WallpaperAppTests.m; sourceTree = "<group>"; };
 		14E63CFF197D4A0C005E06BE /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
-		14F55CE11990F40D00837B8E /* WallpaperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperViewController.h; sourceTree = "<group>"; };
-		14F55CE21990F40D00837B8E /* WallpaperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,10 +218,12 @@
 				14E63CD9197D49CA005E06BE /* AppDelegate.h */,
 				14E63CDA197D49CA005E06BE /* AppDelegate.m */,
 				14E63CDC197D49CA005E06BE /* Main.storyboard */,
+				14A383501992886E00EE0BB3 /* DetailViewController.h */,
+				14A383511992886E00EE0BB3 /* DetailViewController.m */,
 				14E63CDF197D49CA005E06BE /* ViewController.h */,
 				14E63CE0197D49CA005E06BE /* ViewController.m */,
-				14F55CE11990F40D00837B8E /* WallpaperViewController.h */,
-				14F55CE21990F40D00837B8E /* WallpaperViewController.m */,
+				14A3834D1992811000EE0BB3 /* WallpaperCell.h */,
+				14A3834E1992811000EE0BB3 /* WallpaperCell.m */,
 				1437277E198DBFA5000A06C0 /* ImagePost.h */,
 				1437277F198DBFA5000A06C0 /* ImagePost.m */,
 				14E63CE2197D49CA005E06BE /* Images.xcassets */,
@@ -228,6 +235,7 @@
 		14E63CD1197D49CA005E06BE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				14916E4619929C9F001AD75D /* img_004.jpg */,
 				14E63CFF197D4A0C005E06BE /* placeholder.png */,
 				14E63CD2197D49CA005E06BE /* WallpaperApp-Info.plist */,
 				14E63CD3197D49CA005E06BE /* InfoPlist.strings */,
@@ -338,6 +346,7 @@
 				14E63D00197D4A0C005E06BE /* placeholder.png in Resources */,
 				14E63CD5197D49CA005E06BE /* InfoPlist.strings in Resources */,
 				14E63CDE197D49CA005E06BE /* Main.storyboard in Resources */,
+				14916E4719929C9F001AD75D /* img_004.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,13 +369,14 @@
 				14D65BC7198E720A002FD151 /* UIImage+MultiFormat.m in Sources */,
 				14D65BC2198E720A002FD151 /* SDWebImageDownloaderOperation.m in Sources */,
 				14E63CE1197D49CA005E06BE /* ViewController.m in Sources */,
-				14F55CE31990F40D00837B8E /* WallpaperViewController.m in Sources */,
 				14D65BBF198E720A002FD151 /* SDWebImageCompat.m in Sources */,
 				14D65BC6198E720A002FD151 /* UIImage+GIF.m in Sources */,
 				14D65BC4198E720A002FD151 /* SDWebImagePrefetcher.m in Sources */,
+				14A383521992886E00EE0BB3 /* DetailViewController.m in Sources */,
 				14E63CDB197D49CA005E06BE /* AppDelegate.m in Sources */,
 				14E63CD7197D49CA005E06BE /* main.m in Sources */,
 				14D65BC8198E720A002FD151 /* UIImage+WebP.m in Sources */,
+				14A3834F1992811000EE0BB3 /* WallpaperCell.m in Sources */,
 				14D65BCA198E720A002FD151 /* UIImageView+WebCache.m in Sources */,
 				14D65BC1198E720A002FD151 /* SDWebImageDownloader.m in Sources */,
 				14D65BCB198E720A002FD151 /* UIView+WebCacheOperation.m in Sources */,

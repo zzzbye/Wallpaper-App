@@ -9,13 +9,17 @@
 #import "ViewController.h"
 #import "ImagePost.h"
 #import "UIImageView+WebCache.h"
-#import "WallpaperViewController.h"
+#import "WallpaperCell.h"
+#import "DetailViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
+//@property (nonatomic, retain) UICollectionView *collectionView;
 
 @end
 
 @implementation ViewController
+
 
 - (void)viewDidLoad
 {
@@ -69,28 +73,35 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    UICollectionViewCell *cell = nil;
+    
+    cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    
+    WallpaperCell *wallpaperCell = (WallpaperCell *)cell;
 
+    
     ImagePost *imgPost = [self.wallPaperArray objectAtIndex:indexPath.row];
-    UIImageView *imageView = (UIImageView *)[cell viewWithTag:100];
+//    UIImageView *imageView = (UIImageView *)[cell viewWithTag:100];
 
     NSURL *wpURL = [NSURL URLWithString:imgPost.wallPaper];
 //    NSData *imgData = [NSData dataWithContentsOfURL:wpURL];
-    
 //    imageView.image = [UIImage imageWithData:imgData];
-    [imageView sd_setImageWithURL:wpURL
+    [wallpaperCell.thumbnailImageView sd_setImageWithURL:wpURL
                 placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
 
     return cell;
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if([sender isKindOfClass:[UICollectionViewCell class]]){
-        if([segue.destinationViewController isKindOfClass:[WallpaperViewController class]])
-        {
-            WallpaperViewController *nextViewController = segue.destinationViewController;
-//            NSIndexPath *path = [UICollectionView indexPathForCell:sender];
-        }
+    if([segue.identifier isEqualToString:@"fullviewSegue"]){
+        DetailViewController *vc = (DetailViewController *)segue.destinationViewController;
+        
+        UICollectionViewCell *cell = (UICollectionViewCell *)sender;
+        NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
+        ImagePost *imgPost = [self.wallPaperArray objectAtIndex:indexPath.row];
+        NSURL *wpURL = [NSURL URLWithString:imgPost.wallPaper];
+        NSData *imgData = [NSData dataWithContentsOfURL:wpURL];
+        vc.wallpaperImage = [UIImage imageWithData:imgData];
     }
 }
 
