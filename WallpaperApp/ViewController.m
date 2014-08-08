@@ -14,7 +14,8 @@
 #import "AppDelegate.h"
 
 @interface ViewController ()
-//@property (nonatomic, retain) UICollectionView *collectionView;
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
+
 
 @end
 
@@ -33,12 +34,19 @@
     
     self.wallPaperArray = [NSMutableArray array];
     
+    self.storeImageArray = [NSMutableArray array];
+
+    
     NSArray *imagePostArray = [dataDictionary objectForKey:@"items"];
     for (NSDictionary *ipDictionary in imagePostArray) {
         ImagePost *imgPost = [ImagePost imagePostWithURL:[ipDictionary objectForKey:@"mediaLink"]];
-//        NSURL *wpURL = [NSURL URLWithString:imgPost.wallPaper];
-//        NSData *imgData = [NSData dataWithContentsOfURL:wpURL];
+        
+        NSURL *wpURL = [NSURL URLWithString:imgPost.wallPaper];
+        NSData *imgData = [NSData dataWithContentsOfURL:wpURL];
+        self.tempImage = [UIImage imageWithData:imgData];
+        
         [self.wallPaperArray addObject:imgPost];
+        [self.storeImageArray addObject:self.tempImage];
     }
     
 }
@@ -78,16 +86,20 @@
     cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     
     WallpaperCell *wallpaperCell = (WallpaperCell *)cell;
-
     
     ImagePost *imgPost = [self.wallPaperArray objectAtIndex:indexPath.row];
-//    UIImageView *imageView = (UIImageView *)[cell viewWithTag:100];
 
     NSURL *wpURL = [NSURL URLWithString:imgPost.wallPaper];
 //    NSData *imgData = [NSData dataWithContentsOfURL:wpURL];
 //    imageView.image = [UIImage imageWithData:imgData];
     [wallpaperCell.thumbnailImageView sd_setImageWithURL:wpURL
                 placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+    
+    
+
+    [self.storeImageArray addObject:self.tempImage];
+    
+//    NSLog(@"Image name: %@", self.storeImageArray);
 
     return cell;
 }
@@ -98,11 +110,18 @@
         
         UICollectionViewCell *cell = (UICollectionViewCell *)sender;
         NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
-        ImagePost *imgPost = [self.wallPaperArray objectAtIndex:indexPath.row];
-        NSURL *wpURL = [NSURL URLWithString:imgPost.wallPaper];
-        NSData *imgData = [NSData dataWithContentsOfURL:wpURL];
-        vc.wallpaperImage = [UIImage imageWithData:imgData];
+//        ImagePost *imgPost = [self.wallPaperArray objectAtIndex:indexPath.row];
+//        NSURL *wpURL = [NSURL URLWithString:imgPost.wallPaper];
+//        NSData *imgData = [NSData dataWithContentsOfURL:wpURL];
+         UIImage *image = [self.storeImageArray objectAtIndex:indexPath.row];
+        vc.wallpaperImage = image;
+        
     }
+}
+
+-(IBAction)unwindToRootVC:(UIStoryboardSegue *)segue
+{
+    //Nothing needed here
 }
 
 @end

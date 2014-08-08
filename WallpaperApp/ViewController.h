@@ -12,4 +12,8 @@
 
 @property (strong, nonatomic) NSMutableArray *wallPaperArray;
 
+@property (strong, nonatomic) NSMutableArray *storeImageArray;
+
+@property (strong, nonatomic) UIImage *tempImage;
+
 @end
