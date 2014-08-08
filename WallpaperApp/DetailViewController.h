@@ -12,5 +12,6 @@
 
 @property (strong, nonatomic) UIImage *wallpaperImage;
 
+@property (strong, nonatomic) IBOutlet UILabel *testLabel;
 
 @end

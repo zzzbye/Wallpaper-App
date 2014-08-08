@@ -95,11 +95,7 @@
     [wallpaperCell.thumbnailImageView sd_setImageWithURL:wpURL
                 placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
     
-    
-
     [self.storeImageArray addObject:self.tempImage];
-    
-//    NSLog(@"Image name: %@", self.storeImageArray);
 
     return cell;
 }
@@ -110,10 +106,7 @@
         
         UICollectionViewCell *cell = (UICollectionViewCell *)sender;
         NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
-//        ImagePost *imgPost = [self.wallPaperArray objectAtIndex:indexPath.row];
-//        NSURL *wpURL = [NSURL URLWithString:imgPost.wallPaper];
-//        NSData *imgData = [NSData dataWithContentsOfURL:wpURL];
-         UIImage *image = [self.storeImageArray objectAtIndex:indexPath.row];
+        UIImage *image = [self.storeImageArray objectAtIndex:indexPath.row];
         vc.wallpaperImage = image;
         
     }

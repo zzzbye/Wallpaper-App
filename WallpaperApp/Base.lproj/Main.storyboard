@@ -70,6 +70,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="GBi-h0-5iN">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DIf-IR-m1M" appends="YES" id="KVo-W6-Dn2"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nxm-MX-mdZ">
                                 <rect key="frame" x="5" y="2" width="63" height="63"/>
@@ -81,16 +85,29 @@
                                     <segue destination="fw6-yL-XwP" kind="unwind" unwindAction="unwindToRootVC:" id="hyW-Gw-VyZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YLS-L5-yiY">
+                                <rect key="frame" x="147" y="156" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="KGD-N4-veh"/>
                     <connections>
                         <outlet property="imageView" destination="GBi-h0-5iN" id="qzh-va-0p6"/>
+                        <outlet property="testLabel" destination="YLS-L5-yiY" id="pUH-QR-4PL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGh-Yn-Qgr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="fw6-yL-XwP" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="DIf-IR-m1M">
+                    <connections>
+                        <action selector="singleTapRecognized:" destination="eJF-hM-yyv" id="r0d-HJ-y7V"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1295" y="65"/>
         </scene>

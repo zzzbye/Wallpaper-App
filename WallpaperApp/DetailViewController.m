@@ -20,6 +20,15 @@
 {
     [super viewDidLoad];
     
+    UITapGestureRecognizer *tapped = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(oneTapRecognized:)];
+    
+    tapped.numberOfTapsRequired = 1;
+
+    tapped.numberOfTouchesRequired = 1;
+    
+    [self.view addGestureRecognizer:tapped];
+    
+    //Assign image from selected UICollectionView cell
     self.imageView.image = self.wallpaperImage;
     
 }
@@ -27,6 +36,11 @@
 - (BOOL)prefersStatusBarHidden
 {
     return YES;
+}
+
+-(void)oneTapRecognized:(UITapGestureRecognizer *) sender
+{
+    NSLog(@"Single Tap Recognized");
 }
 
 @end
