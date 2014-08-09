@@ -10,7 +10,8 @@
 
 @interface DetailViewController ()
 
-@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (nonatomic) BOOL isButtonsVisible;
 
 @end
 
@@ -31,6 +32,10 @@
     //Assign image from selected UICollectionView cell
     self.imageView.image = self.wallpaperImage;
     
+    self.isButtonsVisible = YES;
+    
+    [self.downloadButton addTarget:self action:@selector(downloadPressed:) forControlEvents:UIControlEventTouchUpInside];
+
 }
 
 - (BOOL)prefersStatusBarHidden
@@ -40,7 +45,38 @@
 
 -(void)oneTapRecognized:(UITapGestureRecognizer *) sender
 {
-    NSLog(@"Single Tap Recognized");
+    if (self.isButtonsVisible == YES) {
+    [UIView animateWithDuration:0.3 animations:^{
+        self.backButton.alpha = 0;
+        self.downloadButton.alpha = 0;
+//        self.downloadButton.alpha = 0;
+    } completion: ^(BOOL finished) {//creates a variable (BOOL) called "finished" that is set to *YES* when animation IS completed.
+        self.backButton.hidden = finished;//if animation is finished ("finished" == *YES*), then hidden = "finished" ... (aka hidden = *YES*)
+        self.downloadButton.hidden = finished;
+    }];
+        self.isButtonsVisible = NO;
+    }
+    else {
+        self.backButton.alpha = 0;
+        self.backButton.hidden = NO;
+        self.downloadButton.alpha = 0;
+        self.downloadButton.hidden = NO;
+        [UIView animateWithDuration:0.3 animations:^{
+            self.backButton.alpha = 1;
+            self.downloadButton.alpha = 1;
+        }];
+        self.isButtonsVisible = YES;
+    }
 }
+
+-(void)downloadPressed:(UIButton *)sender{
+    UIImageWriteToSavedPhotosAlbum(self.imageView.image, self, nil, nil);
+    NSLog(@"Image Saved");
+}
+
+//- (IBAction)downloadButton:(UIButton *)sender {
+//    UIImageWriteToSavedPhotosAlbum(self.imageView.image, self, nil, nil);
+//    NSLog(@"Image Saved");
+//}
 
 @end

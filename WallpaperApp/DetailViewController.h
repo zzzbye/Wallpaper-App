@@ -12,6 +12,8 @@
 
 @property (strong, nonatomic) UIImage *wallpaperImage;
 
-@property (strong, nonatomic) IBOutlet UILabel *testLabel;
+@property (strong, nonatomic) IBOutlet UIButton *backButton;
+
+@property (strong, nonatomic) IBOutlet UIButton *downloadButton;
 
 @end

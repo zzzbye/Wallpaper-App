@@ -76,7 +76,7 @@
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nxm-MX-mdZ">
-                                <rect key="frame" x="5" y="2" width="63" height="63"/>
+                                <rect key="frame" x="5" y="3" width="63" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="btn_back.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -85,20 +85,19 @@
                                     <segue destination="fw6-yL-XwP" kind="unwind" unwindAction="unwindToRootVC:" id="hyW-Gw-VyZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YLS-L5-yiY">
-                                <rect key="frame" x="147" y="156" width="42" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ibb-W8-VOz">
+                                <rect key="frame" x="130" y="502" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" image="download.png"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="KGD-N4-veh"/>
                     <connections>
+                        <outlet property="backButton" destination="nxm-MX-mdZ" id="8MZ-Wu-B0H"/>
+                        <outlet property="downloadButton" destination="Ibb-W8-VOz" id="PeH-c8-CcK"/>
                         <outlet property="imageView" destination="GBi-h0-5iN" id="qzh-va-0p6"/>
-                        <outlet property="testLabel" destination="YLS-L5-yiY" id="pUH-QR-4PL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGh-Yn-Qgr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -132,6 +131,7 @@
     </scenes>
     <resources>
         <image name="btn_back.png" width="80" height="80"/>
+        <image name="download.png" width="128" height="128"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
