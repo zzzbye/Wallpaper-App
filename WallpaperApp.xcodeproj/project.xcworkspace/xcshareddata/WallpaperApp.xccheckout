@@ -10,29 +10,29 @@
 	<string>WallpaperApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>7F7D188C-EBE4-4569-8F83-9215EC484B7F</key>
+		<key>274815F810C28A9CA96BB3EA2FA709C90AA4D5CF</key>
 		<string>https://github.com/zzzbye/Wallpaper-App.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>WallpaperApp.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>7F7D188C-EBE4-4569-8F83-9215EC484B7F</key>
+		<key>274815F810C28A9CA96BB3EA2FA709C90AA4D5CF</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/zzzbye/Wallpaper-App.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>7F7D188C-EBE4-4569-8F83-9215EC484B7F</string>
+	<string>274815F810C28A9CA96BB3EA2FA709C90AA4D5CF</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>7F7D188C-EBE4-4569-8F83-9215EC484B7F</string>
+			<string>274815F810C28A9CA96BB3EA2FA709C90AA4D5CF</string>
 			<key>IDESourceControlWCCName</key>
 			<string>WallpaperApp</string>
 		</dict>

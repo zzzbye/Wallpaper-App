@@ -75,8 +75,16 @@
                                     <outletCollection property="gestureRecognizers" destination="DIf-IR-m1M" appends="YES" id="KVo-W6-Dn2"/>
                                 </connections>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lockscreen.png" id="Jtc-7R-7zb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homescreen.png" id="7dl-9k-310">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nxm-MX-mdZ">
-                                <rect key="frame" x="5" y="3" width="63" height="63"/>
+                                <rect key="frame" x="10" y="10" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="btn_back.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -86,9 +94,23 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ibb-W8-VOz">
-                                <rect key="frame" x="130" y="502" width="60" height="60"/>
+                                <rect key="frame" x="131" y="500" width="58" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="download.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="92q-9d-VzK">
+                                <rect key="frame" x="10" y="514" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="btn_lockscreen.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EvV-qr-W7m">
+                                <rect key="frame" x="266" y="514" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="btn_homescreen.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -97,7 +119,11 @@
                     <connections>
                         <outlet property="backButton" destination="nxm-MX-mdZ" id="8MZ-Wu-B0H"/>
                         <outlet property="downloadButton" destination="Ibb-W8-VOz" id="PeH-c8-CcK"/>
+                        <outlet property="homescreenButton" destination="EvV-qr-W7m" id="lkL-VR-IYi"/>
+                        <outlet property="homescreenImageView" destination="7dl-9k-310" id="aWJ-ez-5N2"/>
                         <outlet property="imageView" destination="GBi-h0-5iN" id="qzh-va-0p6"/>
+                        <outlet property="lockscreenButton" destination="92q-9d-VzK" id="1Jz-BW-Hra"/>
+                        <outlet property="lockscreenImageView" destination="Jtc-7R-7zb" id="WBl-hz-Gr9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGh-Yn-Qgr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -130,8 +156,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="btn_back.png" width="80" height="80"/>
-        <image name="download.png" width="128" height="128"/>
+        <image name="btn_back.png" width="88" height="88"/>
+        <image name="btn_homescreen.png" width="88" height="88"/>
+        <image name="btn_lockscreen.png" width="88" height="88"/>
+        <image name="download.png" width="116" height="116"/>
+        <image name="homescreen.png" width="640" height="1136"/>
+        <image name="lockscreen.png" width="640" height="1136"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

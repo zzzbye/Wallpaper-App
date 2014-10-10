@@ -12,8 +12,15 @@
 
 @property (strong, nonatomic) UIImage *wallpaperImage;
 
-@property (strong, nonatomic) IBOutlet UIButton *backButton;
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
 
-@property (strong, nonatomic) IBOutlet UIButton *downloadButton;
+@property (weak, nonatomic) IBOutlet UIButton *downloadButton;
 
+@property (weak, nonatomic) IBOutlet UIImageView *lockscreenImageView;
+
+@property (weak, nonatomic) IBOutlet UIImageView *homescreenImageView;
+
+@property (weak, nonatomic) IBOutlet UIButton *lockscreenButton;
+
+@property (weak, nonatomic) IBOutlet UIButton *homescreenButton;
 @end

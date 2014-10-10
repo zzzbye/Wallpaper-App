@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14005A2D199661280029D753 /* homescreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 14005A2B199661280029D753 /* homescreen.png */; };
+		14005A2E199661280029D753 /* lockscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 14005A2C199661280029D753 /* lockscreen.png */; };
 		1400B82F1993DCD500271D8D /* btn_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 1400B82E1993DCD500271D8D /* btn_back.png */; };
 		141F59311996477D00D15D47 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 141F59301996477D00D15D47 /* download.png */; };
 		14372780198DBFA5000A06C0 /* ImagePost.m in Sources */ = {isa = PBXBuildFile; fileRef = 1437277F198DBFA5000A06C0 /* ImagePost.m */; };
+		1486997E19A6335F0029D612 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1486997B19A6335F0029D612 /* ProgressHUD.bundle */; };
+		1486997F19A6335F0029D612 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1486997D19A6335F0029D612 /* ProgressHUD.m */; };
+		1490D13E19ACD2E700C258AD /* btn_homescreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 1490D13C19ACD2E700C258AD /* btn_homescreen.png */; };
+		1490D13F19ACD2E700C258AD /* btn_lockscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 1490D13D19ACD2E700C258AD /* btn_lockscreen.png */; };
 		14A3834F1992811000EE0BB3 /* WallpaperCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A3834E1992811000EE0BB3 /* WallpaperCell.m */; };
 		14A383521992886E00EE0BB3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A383511992886E00EE0BB3 /* DetailViewController.m */; };
 		14D65BBC198E720A002FD151 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D65B9C198E720A002FD151 /* MKAnnotationView+WebCache.m */; };
@@ -56,10 +62,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14005A2B199661280029D753 /* homescreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homescreen.png; sourceTree = "<group>"; };
+		14005A2C199661280029D753 /* lockscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lockscreen.png; sourceTree = "<group>"; };
 		1400B82E1993DCD500271D8D /* btn_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_back.png; sourceTree = "<group>"; };
 		141F59301996477D00D15D47 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
 		1437277E198DBFA5000A06C0 /* ImagePost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePost.h; sourceTree = "<group>"; };
 		1437277F198DBFA5000A06C0 /* ImagePost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePost.m; sourceTree = "<group>"; };
+		1486997B19A6335F0029D612 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		1486997C19A6335F0029D612 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		1486997D19A6335F0029D612 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		1490D13C19ACD2E700C258AD /* btn_homescreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_homescreen.png; sourceTree = "<group>"; };
+		1490D13D19ACD2E700C258AD /* btn_lockscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_lockscreen.png; sourceTree = "<group>"; };
 		14A3834D1992811000EE0BB3 /* WallpaperCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperCell.h; sourceTree = "<group>"; };
 		14A3834E1992811000EE0BB3 /* WallpaperCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperCell.m; sourceTree = "<group>"; };
 		14A383501992886E00EE0BB3 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -143,6 +156,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1486997A19A6335F0029D612 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				1486997B19A6335F0029D612 /* ProgressHUD.bundle */,
+				1486997C19A6335F0029D612 /* ProgressHUD.h */,
+				1486997D19A6335F0029D612 /* ProgressHUD.m */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
 		14D65B9A198E720A002FD151 /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +209,7 @@
 		14E63CBE197D49CA005E06BE = {
 			isa = PBXGroup;
 			children = (
+				1486997A19A6335F0029D612 /* ProgressHUD */,
 				14D65B9A198E720A002FD151 /* SDWebImage */,
 				14E63CD0197D49CA005E06BE /* WallpaperApp */,
 				14E63CEF197D49CA005E06BE /* WallpaperAppTests */,
@@ -237,6 +261,10 @@
 		14E63CD1197D49CA005E06BE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				14005A2B199661280029D753 /* homescreen.png */,
+				1490D13C19ACD2E700C258AD /* btn_homescreen.png */,
+				1490D13D19ACD2E700C258AD /* btn_lockscreen.png */,
+				14005A2C199661280029D753 /* lockscreen.png */,
 				141F59301996477D00D15D47 /* download.png */,
 				1400B82E1993DCD500271D8D /* btn_back.png */,
 				14E63CFF197D4A0C005E06BE /* placeholder.png */,
@@ -345,10 +373,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14005A2D199661280029D753 /* homescreen.png in Resources */,
 				14E63CE3197D49CA005E06BE /* Images.xcassets in Resources */,
+				14005A2E199661280029D753 /* lockscreen.png in Resources */,
 				14E63D00197D4A0C005E06BE /* placeholder.png in Resources */,
 				14E63CD5197D49CA005E06BE /* InfoPlist.strings in Resources */,
+				1490D13E19ACD2E700C258AD /* btn_homescreen.png in Resources */,
+				1486997E19A6335F0029D612 /* ProgressHUD.bundle in Resources */,
 				14E63CDE197D49CA005E06BE /* Main.storyboard in Resources */,
+				1490D13F19ACD2E700C258AD /* btn_lockscreen.png in Resources */,
 				1400B82F1993DCD500271D8D /* btn_back.png in Resources */,
 				141F59311996477D00D15D47 /* download.png in Resources */,
 			);
@@ -377,6 +410,7 @@
 				14D65BC6198E720A002FD151 /* UIImage+GIF.m in Sources */,
 				14D65BC4198E720A002FD151 /* SDWebImagePrefetcher.m in Sources */,
 				14A383521992886E00EE0BB3 /* DetailViewController.m in Sources */,
+				1486997F19A6335F0029D612 /* ProgressHUD.m in Sources */,
 				14E63CDB197D49CA005E06BE /* AppDelegate.m in Sources */,
 				14E63CD7197D49CA005E06BE /* main.m in Sources */,
 				14D65BC8198E720A002FD151 /* UIImage+WebP.m in Sources */,
@@ -516,10 +550,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WallpaperApp/WallpaperApp-Prefix.pch";
 				INFOPLIST_FILE = "WallpaperApp/WallpaperApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -530,10 +566,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WallpaperApp/WallpaperApp-Prefix.pch";
 				INFOPLIST_FILE = "WallpaperApp/WallpaperApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
